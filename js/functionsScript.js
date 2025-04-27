@@ -1,4 +1,4 @@
-export function sum(x, y = 2) {
+function sum(x, y = 2) {
     if(isNaN(x) || isNaN(y)) {
         console.log("enter valid numbers");
         return;
@@ -9,7 +9,7 @@ export function sum(x, y = 2) {
 console.log(printVariables(1000, 1500, 2000)); //undefined
 
 
-export function printVariables(value1, value2, value3 = 7) {
+function printVariables(value1, value2, value3 = 7) {
     if (value3 == undefined) {
         return arguments;
     }
